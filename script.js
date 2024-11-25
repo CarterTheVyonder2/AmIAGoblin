@@ -1,10 +1,12 @@
 document.getElementById('submitQuiz').addEventListener('click', function () {
+    // Get the selected answers
     const answers = [
         document.querySelector('input[name="q1"]:checked'),
         document.querySelector('input[name="q2"]:checked'),
         document.querySelector('input[name="q3"]:checked')
     ];
 
+    // Check if all questions are answered
     if (answers.includes(null)) {
         document.getElementById('result').textContent = "Please answer all the questions!";
         return;
@@ -25,4 +27,6 @@ document.getElementById('submitQuiz').addEventListener('click', function () {
         result = "You're definitely not a goblin! 🎉";
     }
 
-    document.getElementById('result
+    // Display the result
+    document.getElementById('result').textContent = result;
+});
