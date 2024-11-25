@@ -13,4 +13,36 @@ body {
 
 .container {
     max-width: 600px;
-    background-color:
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #fddb3a;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #fddb3a;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
